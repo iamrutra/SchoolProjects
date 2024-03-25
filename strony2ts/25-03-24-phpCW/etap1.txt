@@ -1,0 +1,9 @@
+Utwórz nową bazę danych o nazwie ogloszenia
+
+Zapytanie 1: wybierające jedynie pola id, imie, nazwisko, email z tabeli uzytkownik dla tych rekordów, dla których id jest mniejsze od 4
+
+SELECT uzytkownik.id, uzytkownik.imie, uzytkownik.nazwisko, uzytkownik.email FROM uzytkownik WHERE uzytkownik.id<4;
+
+Zapytanie 2: wybierające jedynie tytuł tego ogłoszenia, którego właściciel ma id równe 1
+
+SELECT ogloszenie.tytul FROM ogloszenie WHERE ogloszenie.uzytkownik_id=1;
