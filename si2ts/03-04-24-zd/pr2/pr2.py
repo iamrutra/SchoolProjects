@@ -11,8 +11,8 @@ liczba_studentow = data['Łączna liczba studentów z Ukrainy zarejestrowanych p
 # tworzenie grafiki
 plt.figure(figsize=(10, 8))
 plt.barh(wojewodztwo, liczba_studentow, color='skyblue')
-plt.xlabel('Województwo')
-plt.ylabel('Liczba studentów z Ukrainy')
+plt.ylabel('Województwo')
+plt.xlabel('Liczba studentów z Ukrainy')
 plt.title('Liczba studentów z Ukrainy zarejestrowanych po 2022-02-24 w podziale na województwa')
 plt.xticks(rotation=45)
 plt.tight_layout()
