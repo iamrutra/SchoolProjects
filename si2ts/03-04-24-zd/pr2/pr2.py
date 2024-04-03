@@ -1,20 +1,19 @@
 import matplotlib.pyplot as plt
-import csv
+import pandas as pd
 
-wojewodztwo = []
-liczba_studentow = []
+# dane z pliku csv
+data = pd.read_csv('Zestawienie_Studentow_z_Obywatelstwem_Ukrainskim_w_Podziale_na_Wojewodztwa_2024-03-18.csv', encoding='utf-8')
 
-with open('Zestawienie_Studentow_z_Obywatelstwem_Ukrainskim_w_Podziale_na_Wojewodztwa_2024-03-18.csv', newline='', encoding='utf-8') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        wojewodztwo.append(row['Województwo'])
-        liczba_studentow.append(int(row['Łączna liczba studentów z Ukrainy zarejestrowanych po 2022-02-24']))
+# dane
+wojewodztwo = data['Województwo']
+liczba_studentow = data['Łączna liczba studentów z Ukrainy zarejestrowanych po 2022-02-24']
 
+# tworzenie grafiki
 plt.figure(figsize=(10, 8))
 plt.barh(wojewodztwo, liczba_studentow, color='skyblue')
-plt.xlabel('Wojewщdztwo')
-plt.ylabel('Liczba studentщw z Ukrainy')
-plt.title('Liczba studentщw z Ukrainy zarejestrowanych po 2022-02-24 w podziale na wojewщdztwa')
+plt.xlabel('Województwo')
+plt.ylabel('Liczba studentów z Ukrainy')
+plt.title('Liczba studentów z Ukrainy zarejestrowanych po 2022-02-24 w podziale na województwa')
 plt.xticks(rotation=45)
 plt.tight_layout()
 
