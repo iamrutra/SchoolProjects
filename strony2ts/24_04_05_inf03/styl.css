@@ -1,0 +1,49 @@
+body{
+    background-color: #E0F7FA;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calaStrona{
+    width: 95%;
+    margin: auto;
+}
+header{
+    background-color:  #00838F;
+    height: 200px;
+}
+main{
+    display: flex;
+}
+
+nav{
+    background-color:  #006064;
+    padding: 15px;
+}
+nav a{
+    color: white;
+    font-size: 150%;
+    text-decoration: none;
+}
+main div{
+    height: 350px;
+    width: 33%;
+}
+footer{
+    background-color: #006064;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+ul li{
+    text-align: left;
+}
+input[type=button], input[type=reset]{
+    background-color: #00838F;
+}
+input[type=button]:hover, input[type=reset]:hover{
+    background-color: #80DEEA;
+}
+table{
+    margin: auto;
+}

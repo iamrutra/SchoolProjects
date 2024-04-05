@@ -1,0 +1,9 @@
+Skrypt łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie ogloszenia
+Skrypt wysyła do bazy danych dwa zapytania:
+- zapytanie 1 (patrz punkt „Operacje na bazie danych”)
+- zapytanie 2 (patrz punkt „Operacje na bazie danych”) zmodyfikowane tak, aby dla danego id użytkownika pobierany był tylko pierwszy tytuł ogłoszenia z jego ogłoszeń
+Dla każdego zwróconego zapytaniem wiersza wykonuje działania:
+- Wyświetla w nagłówku trzeciego stopnia pola: id imie nazwisko
+Wyświetla w akapicie email
+- W kolejnym akapicie wyświetla tekst: „Ogłoszenie:” i dalej pierwszy tytuł ogłoszenia pobrany zmodyfikowanym zapytaniem 2
+Na końcu działania skrypt zamyka połączenie z serwerem.
