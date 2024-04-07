@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaczne Jadło</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header><h1>Bar Smaczne Jadło zaprasza</h1></header>
+    <main>
+        <div class="lewy">
+            <h4>Dziś polecamy</h4>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Zupa Gazpacho</td>
+                        <td>cena: 20 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Kurczak pieczony</td>
+                        <td>cena: 40 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="prawy"><img src="./menu.jpg" alt="makarony"></div>
+    </main>
+    <div class="dolny">
+        <h3>Chcesz z nami pracować?</h3>
+        <form action="./rekrutacja.php" method="post">
+            Imię: <input type="text" name="imie" id=""><br>
+            Nazwisko: <input type="text" name="nazwisko" id=""> <br>
+            Stanowisko: <input type="number" name="stan" id="" max="4"> (1 – kucharz, 2 – pomoc, 3 – kelner, 4 – barman) <br>
+            <input type="reset" value="WYCZYŚĆ">
+            <input type="submit" value="REKRUTUJ">
+        </form>
+    </div>
+    <footer>Autor: <b>0000000000</b></footer>
+</body>
+</html>

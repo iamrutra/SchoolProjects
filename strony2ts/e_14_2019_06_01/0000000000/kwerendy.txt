@@ -1,0 +1,13 @@
+zap1
+SELECT towary.nazwa FROM towary WHERE towary.promocja = 1;
+
+zap2
+SELECT towary.cena FROM towary WHERE towary.nazwa = 'Cienkopis';
+
+zap3
+SELECT dostawcy.nazwa, COUNT(towary.idDostawcy) AS ilosc FROM dostawcy
+JOIN towary ON dostawcy.id = towary.idDostawcy
+GROUP BY dostawcy.nazwa
+
+zap4
+ALTER TABLE dostawcy ADD COLUMN e_mail TEXT;

@@ -1,0 +1,35 @@
+main{
+    display: flex;
+}
+body{
+    background-color: #E0E0E0;
+    font-family: Garamond;
+}
+header, footer{
+    background-color: #C17900;
+    text-align: center;
+    color: white;
+    height: 50px;
+}
+.lewy{
+    width: 40%;
+    font-size: 150%;
+}
+.dolny{
+    background-color: #FFD59A;
+    padding: 70px;
+}
+img{
+    height: 350px;
+}
+table{
+    border: 1px dotted black;
+    width: 90%;
+}
+input[type=submit], input[type=reset]{
+    background-color: #C17900;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    border: none;
+}

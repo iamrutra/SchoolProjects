@@ -1,0 +1,15 @@
+zap1
+SELECT ryby.nazwa, ryby.wystepowanie FROM ryby
+WHERE ryby.styl_zycia = 1;
+
+zap2
+SELECT okres_ochronny.Ryby_id, okres_ochronny.wymiar_ochronny FROM okres_ochronny
+WHERE okres_ochronny.wymiar_ochronny < 50;
+
+zap3
+SELECT ryby.nazwa, lowisko.akwen FROM ryby
+JOIN lowisko ON ryby.id = lowisko.Ryby_id
+WHERE ryby.styl_zycia = 1;
+
+zap4
+ALTER TABLE ryby ADD COLUMN dobowy_limit INT;

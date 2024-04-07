@@ -1,0 +1,15 @@
+zap1
+INSERT INTO pracownicy
+(pracownicy.imie, pracownicy.nazwisko, pracownicy.stanowisko)
+VALUES ('Katarzyna','Nowak','kelner');
+
+zap2
+SELECT pracownicy.imie, pracownicy.nazwisko FROM pracownicy
+WHERE pracownicy.stanowisko = 'pomoc';
+
+zap3
+SELECT dania.id, dania.nazwa FROM dania
+WHERE dania.cena < 20;
+
+zap4
+UPDATE dania SET dania.cena = dania.cena - 2;
