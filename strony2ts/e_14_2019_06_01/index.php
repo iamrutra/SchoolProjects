@@ -43,7 +43,7 @@
                 $zap2 = mysqli_query($id, "SELECT towary.cena FROM towary WHERE towary.nazwa = '$nazwaSel';");
                 $ceny = mysqli_fetch_array($zap2);
                 $cena = $ceny['cena'] * 0.85;
-                $roundedPrice = number_format($cena, 2);
+                $roundedPrice = round($cena, 2);
                 echo "Cena: {$roundedPrice} zł";
             }
             ?>

@@ -1,0 +1,43 @@
+.bloki, .liga{
+    display: flex;
+}
+header{
+    color: white;
+    text-align: center;
+    height: 330px;
+}
+.blokLiga{
+    color: white;
+    text-align: center;
+    width: 170px;
+    margin: 5px;
+    border: solid 1px white;
+    border-radius: 15px;
+}
+.blokLiga:hover{
+    background-color: white;
+    color: black;
+}
+.glowny{
+    color: white;
+}
+.lewy{
+    background-color: whitesmoke;
+    width: 30%;
+    text-align: center;
+    height: 150px;
+}
+.prawy{
+    background-color: whitesmoke;
+    width: 70%;
+    height: 150px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: seagreen;
+}
+h3{
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+}
