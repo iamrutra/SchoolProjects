@@ -1,0 +1,8 @@
+SELECT uzytkownicy.haslo FROM uzytkownicy
+WHERE uzytkownicy.login = 'Justyna'
+
+SELECT COUNT(*) AS 'liczba wierszy' FROM dane
+
+SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM uzytkownicy JOIN dane ON uzytkownicy.id = dane.id WHERE uzytkownicy.login = 'Justyna';
+
+ALTER TABLE dane ADD COLUMN stanowisko VARCHAR(50);
