@@ -1,0 +1,11 @@
+SELECT kwiaciarnie.nazwa, kwiaciarnie.ulica FROM kwiaciarnie
+WHERE kwiaciarnie.miasto = 'Malbork';
+
+SELECT kwiaciarnie.id_kwiaciarni, COUNT(*) AS ilosc FROM kwiaciarnie
+JOIN zamowienia ON kwiaciarnie.id_kwiaciarni = zamowienia.id_kwiaciarni;
+
+SELECT kwiaciarnie.nazwa, kwiaciarnie.miasto, zamowienia.kwiaty FROM kwiaciarnie
+JOIN zamowienia ON kwiaciarnie.id_kwiaciarni = zamowienia.id_zam
+WHERE zamowienia.data > 2017-01-07;
+
+CREATE TABLE klienci ( id int NOT NULL PRIMARY KEY, imie TEXT(15), nazwisko TEXT(15), rabat int unsigned );
