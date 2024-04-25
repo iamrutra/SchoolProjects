@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#h1{
+    background-color: #29434E;
+    color: white;
+    text-align: center;
+    width: 70%;
+    height: 70px;
+}
+#h2{
+    background-color: #29434E;
+    color: white;
+    width: 30%;
+    height: 70px;
+}
+header{
+    display: flex;
+}
+#lista1, #lista2{
+    background-color: #B0BEC5;
+    height: 320px;
+    overflow: scroll;
+    width: 100%;
+    max-height: none;
+}
+footer{
+    background-color: #29434E;
+    color: white;
+}
+.film{
+    padding: 5px;
+    width: 226px;
+    height: 280px;
+}
+#filmy1,#filmy2{
+    display: flex;
+    flex-wrap: wrap;
+}
+h3{
+    background-color: #546E7A;
+    color: white;
+    margin: 0;
+}
+h4{
+    text-align: center;
+    margin: 0;
+}
+
