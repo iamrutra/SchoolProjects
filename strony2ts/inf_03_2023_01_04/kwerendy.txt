@@ -1,0 +1,11 @@
+SELECT wycieczki.id, wycieczki.dataWyjazdu, wycieczki.cel, wycieczki.cena from wycieczki 
+where wycieczki.dostepna = 1
+
+SELECT zdjecia.nazwaPliku, zdjecia.podpis FROM zdjecia
+ORDER BY zdjecia.podpis desc
+
+SELECT wycieczki.cel, wycieczki.cena, zdjecia.podpis FROM wycieczki
+join zdjecia ON wycieczki.zdjecia_id = zdjecia.id
+WHERE wycieczki.cena > 1200
+
+alter table wycieczki add column liczbaDni int unsigned after dataWyjazdu;
